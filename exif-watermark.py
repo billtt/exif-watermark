@@ -62,7 +62,7 @@ def create_watermarked_image(input_path, output_path, metadata):
 
         # Prepare the watermark text
         font_path = "RobotoMono.ttf"  # make sure this path is correct for your system
-        font_size = 60  # adjust as necessary to fit your watermark size
+        font_size = 80  # adjust as necessary to fit your watermark size
         font = ImageFont.truetype(font_path, font_size)
 
         # Format the exposure time
@@ -95,7 +95,7 @@ def create_watermarked_image(input_path, output_path, metadata):
         # x = watermark.width - text_width - 70
         # y = watermark.height - text_height - 40
 
-        x = 316
+        x = 640
         y = (watermark.height - text_height) / 2
 
         # Add the text to the watermark template
